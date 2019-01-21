@@ -8,7 +8,7 @@ interest = 0
 totalPaid = 0
 
 
-def minPayment(balance, monthlyPaymentRate):
+def min_payment(balance, monthlyPaymentRate):
     return balance * monthlyPaymentRate
 
 
@@ -24,7 +24,7 @@ count = 0
 while count <= 11:
     # computer monthly min payment
     # remBalance = balance + interest
-    minPay = round(minPayment(balance, monthlyPaymentRate), 2)
+    minPay = round(min_payment(balance, monthlyPaymentRate), 2)
     # compute the unpaid balance
     unpaidBal = round(unpaidBalance(balance, minPay), 2)
     # calculate interest
